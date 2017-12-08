@@ -1,17 +1,36 @@
 package com.company;
 
-public class Movies {
-    String[] ItArray = {"Movie: It", "Rating: R", "Time1: 7:15pm", "Time2:11:00pm"};
-    String [] GetOutArray = {"Movie: Get Out", "Rating: R", "Time1: 8:00pm","Time2:10:30pm "};
-    String [] WonderWomanArray = { "Movie: Wondar Woman", "Rating: PG13", "Time1: 5:30pm", "Time2:9:15pm"};
-    String [] LionKingArray = { "Movie: The Lion King", "Rating: G", "Time1: 11:00 am", "Time2: 6:00pm"};
+import java.util.Scanner;
 
-}
-//if "whatever User sees" == ItArray[0] or GetOutArray[0]
-// Ask them what their age is(int)
-// if age <=18, You cant see movie, select something else
+public class Main {
+
+    public static void main(String[] args){
+        String[][] multipleList = {{"Movie Title |", "Movie Rating |", " Movie Time1 |", "Movie Time2 "},
+                {"IT ", "Rated R ", "5:00pm ", "8:30pm "},
+                {"Get Out ", "Rated R ", "7:45pm ", "9:00pm "},
+                {"Lion King ", "Rated G ", "12:30pm ", "6:15pm "},
+                {" Wonder Women ", "Rated PG13 ", "3:45pm ", "8:00pm"}};
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print (multipleList[i][j] + "");
+            }
+            System.out.println(" ");
+            System.out.println("------------------------------------------------");}
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please select a movie(1-4): ");
+        int selectMovie = input.nextInt();
+            if (selectMovie == 1 || selectMovie == 2) {
+                System.out.println("Enter your age: ");
+                int personAge = input.nextInt();
+                if (personAge < 18){
+                    System.out.println("Sorry you are not old enough to see this movie! Try Again");}
+                else
+                    System.out.println("You selected "+ multipleList[selectMovie][0]+ "!");
+            }
+            else
+                System.out.println("You selected "+ multipleList[selectMovie][0]+ "!");
 
 
-//
-// Ask user what time they want
-// if whatever time they want == ItArray[2] or == ItArray[3]
+
+    }
+    }
