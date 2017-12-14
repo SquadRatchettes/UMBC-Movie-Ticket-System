@@ -12,10 +12,10 @@ public static final int MINAGE = 18;
         System.out.println("");
 
         String[][] multipleList = {{"Movie Title |", "(Movie Rating) |", " Movie Time1 |", "Movie Time2 "},
-                {"IT ", "(Rated R) |", "5:00pm |", "8:30pm "},
-                {"Get Out ", "(Rated R)|", "7:45pm |", "9:00pm "},
-                {"Lion King ", "(Rated G)|", "12:30pm | ", "6:15pm "},
-                {" Wonder Women ", "(Rated PG13)|", "3:45pm | ", "8:00pm"}};
+                {"IT", "(Rated R) |", "5:00pm |", "8:30pm "},
+                {"Get Out", "(Rated R)|", "7:45pm |", "9:00pm "},
+                {"Lion King", "(Rated G)|", "12:30pm | ", "6:15pm "},
+                {" Wonder Women", "(Rated PG13)|", "3:45pm | ", "8:00pm"}};
 
         // for loop in order to print out the movie list
         for (int i = 0; i < 5; i++) {
