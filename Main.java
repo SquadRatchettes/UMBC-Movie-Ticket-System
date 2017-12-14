@@ -47,7 +47,7 @@ public static final int MINAGE = 18;
             System.out.println("Current Date & Time: " + date.toString());
 
             Scanner userInput = new Scanner(System.in);
-            System.out.println("Enter your name: ");
+            System.out.println("Enter your first name: ");
             String name;
             name = userInput.next();
             customer1.setCustomerName( name);
