@@ -50,6 +50,7 @@ package com.company;
                 double Kidcost1 = KidApproveMovies / 2;
             return Kidcost1;
         }
+        
         // Method overload #2 for Kid Ticket Prices
         public int Kidprice(int KidApproveMovies) {
             int Kidcost2 = KidApproveMovies / 2;
