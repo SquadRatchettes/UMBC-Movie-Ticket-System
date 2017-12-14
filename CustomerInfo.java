@@ -11,8 +11,7 @@ public class CustomerInfo
 
         public CustomerInfo()
         {
-            customerName = "Roxanne Ricamata";
-            customerAge = 20;
+            
         }
 
         public CustomerInfo(String name, int age)
